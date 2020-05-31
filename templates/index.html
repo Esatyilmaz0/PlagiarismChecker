@@ -1,0 +1,113 @@
+{% extends './layouts/main.html' %}
+
+<head>
+  {% load static %}
+  {% block head %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet" type="text/css">
+
+  <link href="{% static '/page.min.css' %}" rel="stylesheet">
+  <link href="{% static '/style.min.css' %}" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static '/main.css' %}">
+  <link rel="stylesheet" href="{% static '/fontawesome-free-5.13.0-web/css/all.min.css' %}">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png">
+  <link rel="icon" href="./assets/img/favicon.png">
+
+  {% endblock head %}
+</head>
+
+{% block main %}
+
+<body class="layout-centered">
+  <main class="main-content d-block">
+
+    <section class="section">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+
+          <div class="col-md-6 text-md-right">
+            <p class="small-2 text-uppercase text-lightest fw-500 ls-1">Fiyatlandırma</p>
+            <h3 class="fw-500">Uygun Fiyat</h3>
+            <br>
+            <p>Instrument cultivated alteration any favourable expression law far nor. Both new like tore but year. An
+              from mean on with when sing pain. Oh to as principles devonshire companions unsatiable an delightful. The
+              ourselves suffering the sincerity. Inhabit her manners adapted age certain. Debating offended at branched
+              striking be subjects.</p>
+          </div>
+
+          <div class="col-md-5 mx-auto">
+            <img class="rounded-md" src="/static/fiyatlandırma.jpg" alt="...">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+
+          <div class="col-md-6 text-center text-md-left order-md-2">
+            <p class="small-2 text-uppercase text-lightest fw-500 ls-1">İletişim</p>
+            <h3 class="fw-500">7/24 Destek</h3>
+            <br>
+            <p>Instrument cultivated alteration any favourable expression law far nor. Both new like tore but year. An
+              from mean on with when sing pain. Oh to as principles devonshire companions unsatiable an delightful. The
+              ourselves suffering the sincerity. Inhabit her manners adapted age certain. Debating offended at branched
+              striking be subjects.</p>
+          </div>
+
+          <div class="col-md-5 mx-auto">
+            <img class="rounded-md" src="/static/support.png" alt="...">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+
+          <div class="col-md-6 text-md-right">
+            <p class="small-2 text-uppercase text-lightest fw-500 ls-1">Satın Alma İşlemleri</p>
+            <h3 class="fw-500">Shopier Entegrasyonu</h3>
+            <br>
+            <p>Instrument cultivated alteration any favourable expression law far nor. Both new like tore but year. An
+              from mean on with when sing pain. Oh to as principles devonshire companions unsatiable an delightful. The
+              ourselves suffering the sincerity. Inhabit her manners adapted age certain. Debating offended at branched
+              striking be subjects.</p>
+          </div>
+
+          <div class="col-md-5 mx-auto">
+            <img class="rounded-md" src="/static/card.png" alt="...">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    | Get A Qoute
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    !-->
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+{% endblock main %}

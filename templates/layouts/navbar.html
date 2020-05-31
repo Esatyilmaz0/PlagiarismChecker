@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light blue">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Anasayfa <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/checkPlag">Makale Özgünlük Kontrolü</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/pricing">Fiyatlandırma</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about">Hakkımızda</a>
+            </li>
+
+        </ul>
+        {% if not request.user.is_authenticated %}
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/accounts/login">Giriş</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/accounts/register">Kayıt Ol</a>
+            </li>
+        </ul>
+        {% else %}
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link"><span>Krediniz:{{ request.user.profile.credit }}</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/accounts/logout">Çıkış</a>
+            </li>
+        </ul>
+        {% endif %}
+    </div>
+</nav>
